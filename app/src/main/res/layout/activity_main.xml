@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+
+
+    <Button
+        android:id="@+id/custom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_button" />
+
+
+
+    <com.google.android.gms.ads.AdView
+
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8540988746160351/2607715104">
+
+    </com.google.android.gms.ads.AdView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="55dp"
+        app:fab_addButtonColorNormal="@color/colorRed">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:fab_icon="@drawable/ic_share_black_24dp"
+            android:onClick="compartir"
+            app:fab_colorNormal="@color/colorWhite"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="rateMe"
+            app:fab_icon="@drawable/ic_star_black_24dp"
+            app:fab_colorNormal="@color/colorWhite"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:onClick="moreApps"
+            app:fab_icon="@drawable/ic_apps_black_24dp"
+            app:fab_colorNormal="@color/colorWhite"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_security_black_24dp"
+            android:onClick="privacidad"
+            app:fab_colorNormal="@color/colorWhite"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

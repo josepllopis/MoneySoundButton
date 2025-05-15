@@ -43,7 +43,7 @@
             android:layout_height="50dp"
             app:fab_icon="@drawable/ic_share_black_24dp"
             android:onClick="compartir"
-            app:fab_colorNormal="@color/colorWhite"/>
+            app:fab_colorNormal="@color/colorSplash"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:layout_width="50dp"
@@ -57,7 +57,7 @@
             android:layout_height="24dp"
             android:onClick="moreApps"
             app:fab_icon="@drawable/ic_apps_black_24dp"
-            app:fab_colorNormal="@color/colorWhite"/>
+            app:fab_colorNormal="@color/colorSplash"/>
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
